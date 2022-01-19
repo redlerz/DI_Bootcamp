@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1140px ;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+nav {
+    width: 100%;
+    height: 7.5vh;
+    background-color:gainsboro;
+}
+
+nav .container{
+    height:inherit;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    background-color: rgb(200, 250, 176);
+    padding: 8px 24px;
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+} 
+
+header{
+    width: 100%;
+    height: 80vh;
+    background-image: url('https://images.pexels.com/photos/1098365/pexels-photo-1098365.jpeg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header h3{
+    font-size: 50px;
+}
+
+header form{
+    justify-content: center;
+}
+
+header input{
+    width: 400px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+header button{
+    background-color: rgb(1, 19, 78);
+    color: white;
+    border-radius: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+main .container{
+    padding:25px 0;
+    justify-content: center;
+}
+
+main .vertical{
+    width:30%;
+    margin: 0 12px;
+    text-align: center;
+}
+
+main i{
+    font-size:50px;
+    margin: 25px 0;
+}
+
+/* .secondcontent{
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.vertical {
+    display: inline-block;
+    margin:20px;
+}
+
+.secondcontent i{
+
+    font-size: 50px;
+    color: rgb(12, 0, 80);
+    padding-bottom: 20px;
+   
+} */

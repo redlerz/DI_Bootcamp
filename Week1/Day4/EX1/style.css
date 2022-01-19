@@ -1,0 +1,123 @@
+*{
+    font-family: Montserrat, sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    
+}
+
+.flex {
+    display: flex;
+}
+
+
+body{
+    width: 100%;
+    background-image: url(https://image.freepik.com/free-vector/technology-banner-background-with-hexagonal-shapes-text-space_1017-22589.jpg);
+    background-size: cover;
+    display: flex;
+    margin-left: 275px;
+    margin-right: 275px
+    
+
+}
+
+nav a {
+    width: 100%;
+    height: 7.5vh;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+
+nav .container {
+    align-items: center;
+    height: inherit;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.menu ul {
+    margin-left: 192px;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin-right: 35px;
+    cursor: pointer;
+    align-items: center;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.profile {
+    top:200px;
+    position: absolute;
+    left:145px;
+    float:left;
+
+}
+
+    .vl {
+        border-left: 1px solid rgb(235, 238, 235);
+        height: 350px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: 150px;
+      }
+
+    
+      .about {
+        height:100%;
+        width: 65%; 
+        top:190px;
+        left:700px;
+        color:white;
+        padding: 40px;
+
+      }
+
+      .button {
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 15px 32px;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+        background-color: red;
+                  
+
+      }
+
+          footer .container {
+            position: absolute;
+            top:600px;
+            left: 100px;
+            justify-content:space-between;
+            
+        }
+
+        i {
+            font-size:35px;
+            display: flex;
+            
+        }

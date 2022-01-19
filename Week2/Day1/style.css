@@ -1,0 +1,95 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.grid { 
+    display: grid;
+    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ". header header ."
+    ". header header ."
+    ". hero main ."
+    ". hero main ."
+    ". sidebar main ."
+    ". sidebar Extra_content ."
+    ". sidebar Extra_content ."
+    ". Related_images Related_posts ."
+    ". footer footer ."
+    ". footer footer ." ;
+
+    grid-gap:10px;
+
+
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(45, 171, 255);
+    
+}
+
+.hero {
+    grid-area: hero;
+    background-color: rgb(230, 170, 241);
+    color: white;
+
+
+}
+.main {
+    grid-area: main;
+    color: white;
+    background-color: rgb(250, 229, 40);
+
+
+
+}
+.sidebar {
+    grid-area: sidebar;
+    color: white;
+    background-color: rgb(58, 155, 58);
+
+
+
+}
+.Extra_content {
+    grid-area: Extra_content;
+    color: white;
+    background-color: rgb(108, 117, 122);
+
+
+}
+
+.Related_images{
+    grid-area: Related_images;
+    color: white;
+    background-color: rgb(123, 165, 99);
+
+
+}
+
+.Related_posts {
+    grid-area: Related_posts;
+    color: white;
+    background-color: rgb(211, 150, 187);
+
+
+}
+
+.footer {
+    grid-area: footer;
+    color: white;
+    background-color: rgb(255, 149, 28);
+
+
+
+}
+
+
+    

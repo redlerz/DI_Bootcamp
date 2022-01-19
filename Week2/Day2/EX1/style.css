@@ -1,0 +1,106 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Calibri;
+}
+
+ h1 {
+     text-align: center;
+     font-size: 2em;
+    
+ }
+
+ section {
+     display: flex;
+     justify-content: space-around;
+     margin: 5% 0;
+ }
+
+ .offers {
+text-align: center;
+font-size: 8px;
+line-height: 5px;
+font-weight: 800;
+}
+
+.p_sizing {
+    font-size:1.8rem;
+    color: rgb(118, 60, 226);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.comment_wrap {
+display: flex;
+color:grey;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+width: 20%;
+padding: 0;
+position: relative;
+font-size: 15px;
+
+}
+ 
+#comment_wrap1 { 
+    top:-1rem;
+}
+
+#comment_wrap2 {
+    top: 3.5rem;
+}
+
+#comment_wrap3 {
+    top: 1.5rem;
+}
+
+
+.comment {
+    min-height: 50%;
+    padding: 5% 2% 8% 2%;
+    margin: 0;
+    background:white;
+}
+
+
+.comment_img_wrap img {
+    height: 50px;
+    width: 40px;
+    border-radius: 55%;
+}
+
+
+
+#orange, #purple, #green  {
+    min-height: 35%; 
+    padding: 10% 2%  0 2%;
+    margin: 0;
+    color: white;
+}
+
+
+#orange {
+    background-color: orange;
+}
+
+
+#purple {
+    background-color: purple;
+}
+
+
+#green {
+    background-color: green;
+}
+
+
