@@ -22,3 +22,4 @@ document.getElementsByClassName('Jupiter')[0].style.backgroundColor = "#B9D5D7"
 document.getElementsByClassName('Saturn')[0].style.backgroundColor = "#DADBC5"
 document.getElementsByClassName('Uranus')[0].style.backgroundColor = "#B0FBFF"
 document.getElementsByClassName('Neptune')[0].style.backgroundColor = "#7C89CE"
+

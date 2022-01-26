@@ -67,22 +67,23 @@ let prices = {
     "blueberry": 10
 };
 
-// Question 2
-let shoppingList = ['banana', 'orange', 'apple'];
+// // Question 2
+// let shoppingList = ['banana', 'orange', 'apple'];
 
-// Question 3,4,5 ** Not sure
+// // Question 3,4,5 ** Not sure
 
-let myBill = () => {
-    totalPrice = 0;
-    for (let i = 0; i < shoppingList.length; i++) {
+// let myBill = () => {
+//     totalPrice = 0;
+//     for (let i = 0; i < shoppingList.length; i++) {
         
         
-        }
-    }
-    return totalPrice
-};
+//         }
+//     }
+//     return totalPrice
 
-myBill();
+
+
+// myBill();
 
 // Exercise 5
 
@@ -91,123 +92,69 @@ myBill();
 
 // Exercise 6 
 
+function hotelCost(){
+    let totalCost = 0;
+    let duration = "";
+    do {
+        duration = prompt("How many nights would you like to stay for?");
+    } while(!isNumber(duration));
 
-// Question 1
-
-let hotelCost = () => {
-    let numberOfNights = prompt('How many nights you wish to stay in the hotel?')
-    while (numberOfNights.length === 0) {
-        alert('Please type in the amount of nights!')
-        numberOfNights = prompt('How many nights you wish to stay in the hotel?')
-    };
-    let totalForNights = numberOfNights * 140
-    return (`The total amount for the number of nights you have booked is ${totalForNights}$`)
-};
-hotelCost();
-
-// Question 2 ***not sure 
-
-let planeCost = () => {
-    let destination = {
-        London: 180,
-        Paris: 220,
-        Rome: 400
-    };
-    let destination = prompt('What dedtination you wish to go to?')
-
-    while (destination == "" || isNaN(destination) === false) {
-        alert('Choose a correct destination!')
-        destination = prompt('What destination you wish to go to?')
-    }
-
-    return 'Your travel cost is ${destination}'
-  }  else {
-    let otherDestinations = 300
-    return 'Your cost is ${otherDestionations}'
-  }
-};
-planeCost();
-
-
-// Question 3
-
-let rentalCarCost = () => {
-    let carRental = prompt('How many days would you like to rent a car?')
-    while (isNaN(carRental) == true) {
-        alert('Use only numbers')
-        carRental = prompt('How many days would you like to rent a car?')
-    };
-    if (carRental > 10) {
-        let totalCar = carRental * 38
-        return `${totalCar} is the total cost for your rental`
-    } else {
-        let totalCar = carRental * 40
-        return `${totalCar} is the total cost for your rental`
-    }
-};
-rentalCarCost();
-
-
-
-// Question 4
-
-// Hotel cost
-
-let hotelCost = () => {
-    let numberOfNights = prompt('How many nights you wish to stay in the hotel?')
-    while (numberOfNights.length === 0) {
-        alert('Please type in the amount of nights!')
-        numberOfNights = prompt('How many nights you wish to stay in the hotel?')
-    };
-    let totalForNights = numberOfNights * 140
-    return (`The total amount for the number of nights you have booked is ${totalForNights}$`)
-};
-hotelCost();
-
-// Plane cost
-
-let planeRideCost = () => {
-    let destination = {
-        London: 180,
-        Paris: 220,
-        Rome: 400
-    };
-    let destination = prompt('What dedtination you wish to go to?')
-
-    while (destination == "" || isNaN(destination) === false) {
-        alert('Choose a correct destination!')
-        destination = prompt('What destination you wish to go to?')
-    }
-
-    return 'Your travel cost is ${destination}'
-  }  else {
-    let otherDestinations = 300
-    return 'Your cost is ${otherDestionations}'
-  }
-};
-planeRideCost();
-
-// Rental car
-
-let rentalCarCost = () => {
-    let carRental = prompt('How many days would you like to rent a car?')
-    while (isNaN(carRental) == true) {
-        alert('Use only numbers')
-        carRental = prompt('How many days would you like to rent a car?')
-    };
-    if (carRental > 10) {
-        let totalCar = carRental * 38
-        return `${totalCar} is the total cost for your rental`
-    } else {
-        let totalCar = carRental * 40
-        return `${totalCar} is the total cost for your rental`
-    }
-};
-rentalCarCost();
-
-// Total cost
-    
-return `Your total costs are as followed: Plane tickts: ${planeCost} Hotel: ${totalForNights} Car: ${totalCar}`
+    function isNumber() {
+        let containsOnlyDigits = /^[0-9]+$/; // one or more of digits 0 to 9
+        return containsOnlyDigits.test(duration);
+    } 
+    return totalCost = (`${duration*140}$`);
 }
-totalVacationCost();
+//  console.log(hotelCost());
 
+function planeRideCost(){
+ let destination = "";
+ do {
+     destination = prompt("Where would you like to travel to?");
+ } while(!isString(destination));
+
+ function isString(){
+     let containsOnlyLetters = /^[a-z+A-Z+" "]+$/;
+     return containsOnlyLetters.test(destination);
+ }
+ if (destination == "London"){
+     return 'London: 183$'
+ } else if (destination == "Paris"){
+     return 'Paris: 220$'
+ } else {
+     return 'All other destinations: 300$'
+ }
+ 
+}
+//  console.log(planeRideCost());
+
+function rentalCarCost(){
+let totalRentCost = 0;
+let durationOfRent = "";
+do {
+    durationOfRent = prompt("How many nights would you like to rent a car for?");
+} while(!isNumber(durationOfRent));
+
+function isNumber() {
+    let containsOnlyDigits = /^[0-9]+$/; // one or more of digits 0 to 9
+    return containsOnlyDigits.test(durationOfRent);
+} 
+if (durationOfRent > 10) {
+    return totalRentCost = (`${durationOfRent*40}`)-(`${durationOfRent*40}`*0.05); 
+} else {
+return totalRentCost = (`${durationOfRent*40}$`);
+}
+}
+
+//  console.log(rentalCarCost());
+
+function totalVacationCost(){
+ vacationCostTotal =
+`The hotel costs ${hotelCost()},
+the plane ride to ${planeRideCost()}, 
+And the car rental is ${rentalCarCost()}.`;
+ return vacationCostTotal;
+ 
+}
+
+console.log(totalVacationCost()) ;
