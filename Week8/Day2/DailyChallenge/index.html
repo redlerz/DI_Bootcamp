@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Please fill in your full name below:</p>
+    <form method="GET">
+        <label for="firstname">Name:</label>
+        <input name="firstname" id="firstname" type="text">
+        <label for="lastname">Last Name:</label>
+        <input name="lastname" id="lastname" type="text">
+        <button type="submit">Send</button>
+    </form>
+
+    <script>
+
+        let signupForm = document.forms[0]
+
+        const sendDataHandler = (e) => {
+            e.preventDefault();
+            let firstName = document.querySelectorAll("input")[0].value;
+            let lastName = document.querySelectorAll("input")[1].value;
+            let string = JSON.stringify({ firstName, lastName });
+            console.log(string);
+
+            let page = document.createElement("p")
+            page.innerHTML = string
+            signupForm.append(page)
+
+        }
+        signupForm.addEventListener("submit", sendDataHandler)
+
+    </script>
+
+</body>
+
+</html>
