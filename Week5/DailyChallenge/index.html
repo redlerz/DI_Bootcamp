@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: yellow;
+        }
+
+        #animate {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <p><button onclick="myMove()">Click Me</button></p>
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+
+    <script>
+        function myMove() {
+            let count = 0;
+            let interval = setInterval(() => {
+                count++;
+                document.getElementById("animate").setAttribute("style",`left:${count}px;` );
+                if (count == 350) clearInterval(interval)
+            }, 10)
+        }
+    </script>
+</body>
+
+</html>

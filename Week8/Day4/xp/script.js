@@ -9,4 +9,4 @@ xhr.responseType = 'json'
 
 xhr.send()
 
-xhr.addEventListener('load', () => console.log(xhr.response))
+xhr.addEventListener('load', () => console.log(xhr.response)) 

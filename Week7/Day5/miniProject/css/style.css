@@ -43,7 +43,6 @@ input {
   outline: none;
   padding: 5px;
 
-
 }
 
 .robo-display-area {
@@ -85,6 +84,4 @@ input {
   margin: 20px 60px;
   background: url(/images/card-pattern.png) ;
   background-color:#52bfc4;
-  ;
-  opacity: 1;
 }

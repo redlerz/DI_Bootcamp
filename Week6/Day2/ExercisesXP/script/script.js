@@ -22,7 +22,7 @@ function q22() {
 }
 
 //predicton  5
-//Actual
+//Actuallet 
 
 //#3
 function q3() {
@@ -69,7 +69,7 @@ function winBattle() {
     return true;
 }
 
-winbattle = () => true;
+let winbattle = () => true;
 
 // 2. Create a variable called experiencePoints.
 
